@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Has Our Friendship Ended?</title>
+    <meta
+      name="description"
+      content="A cute sunset-themed website for someone special."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="celebration-canvas" aria-hidden="true"></canvas>
+
+    <div class="sky-glow glow-1"></div>
+    <div class="sky-glow glow-2"></div>
+    <div class="sky-glow glow-3"></div>
+
+    <main class="page-shell">
+      <section class="card" id="card">
+        <div class="badge">For someone special ✨</div>
+        <p class="eyebrow">Sunset promises, warm hearts, and one important question…</p>
+        <h1>Has our friendship ended?</h1>
+        <p class="subtext">
+          Choose carefully. One answer behaves normally. The other one knows better.
+        </p>
+
+        <div class="scene">
+          <div class="sun"></div>
+          <div class="horizon"></div>
+          <div class="sparkles" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+
+        <div class="button-stage" id="buttonStage">
+          <button class="answer no-btn" id="noBtn" type="button">No 💛</button>
+          <button class="answer yes-btn" id="yesBtn" type="button" aria-label="Yes">
+            Yes 💔
+          </button>
+        </div>
+
+        <p class="tiny-note">Hint: the right answer is the easy one.</p>
+
+        <div class="success-panel" id="successPanel" aria-live="polite">
+          <div class="success-inner">
+            <div class="success-title">Yayyyyy! 🎉</div>
+            <p>
+              Of course it has not. Some friendships are pure sunset magic — soft,
+              golden, warm, and meant to stay.
+            </p>
+            <p class="success-quote">You’re special, and this friendship is staying right where it belongs. 💛</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
